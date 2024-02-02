@@ -151,6 +151,7 @@
 //? --------------------Tablet --------------------
 @include tablet() {
   .nav_wrapper {
+    padding: 20px 15px;
     gap: 35px;
     justify-content: space-between;
   }

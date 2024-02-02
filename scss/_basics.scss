@@ -10,9 +10,6 @@
   max-width: 1210px;
   margin: 0 auto;
   padding: 0 15px;
-  @include tablet(){
-    padding: 0 15px !important;
-  }
 }
 
 a {

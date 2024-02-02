@@ -2,8 +2,11 @@
   margin-top: 60px;
   background-image: url(../images/bg_composition.png);
   background-size: cover;
-  padding-bottom: 1px;
-  @include mobile(){
+  padding-bottom: 131px;
+  @include tablet() {
+    display: none;
+  }
+  @include mobile() {
     display: none;
   }
 }
@@ -64,7 +67,7 @@
   box-shadow: 5px 5px 10px black;
   margin-bottom: 200px;
 
-  p{
+  p {
     margin-top: 100px;
     color: white;
     font-weight: 700;
