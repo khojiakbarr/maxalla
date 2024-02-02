@@ -1,30 +1,40 @@
-.tablet_order_title{
+.tablet_order {
+  display: none;
+  @include tablet() {
+    display: block;
+  }
+  @include mobile() {
+    display: block;
+  }
+}
+
+.tablet_order_title {
   margin-top: 50px;
   display: flex;
   flex-direction: column;
   gap: 40px;
   text-align: center;
 
-  @include mobile(){
+  @include mobile() {
     gap: 19px;
   }
-  h3{
+  h3 {
     font-weight: 700;
     font-size: 24px;
-    @include mobile(){
+    @include mobile() {
       font-size: 20px;
     }
   }
-  h2{
-    color: #3EA148;
+  h2 {
+    color: #3ea148;
     font-size: 40px;
     font-weight: 700;
-    @include mobile(){
+    @include mobile() {
       font-size: 25px;
     }
   }
-  p{
-    color: #331B3B;
+  p {
+    color: #331b3b;
     font-size: 16px;
     font-weight: 400;
   }

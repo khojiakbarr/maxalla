@@ -1,0 +1,111 @@
+.healing {
+  margin-top: 150px;
+  background-image: url(../images/jp_tablet.svg);
+  background-repeat: no-repeat;
+  background-position: center top 270px;
+  background-size: 51%;
+
+  @include media(0px, 1024px) {
+    display: none;
+  }
+}
+
+.healing_tile {
+  color: #331b3b;
+  h3 {
+    font-weight: 600;
+    font-size: 30px;
+    span {
+      color: red;
+    }
+  }
+  h2 {
+    display: inline-block;
+    position: relative;
+    font-weight: 400;
+    font-size: 50px;
+    &::after {
+      position: absolute;
+      content: "";
+      bottom: -10px;
+      left: 82px;
+      width: 76px;
+      height: 10px;
+      background-color: #fdc221;
+    }
+  }
+}
+
+.healing_top {
+  margin-top: 120px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  gap: 10px;
+}
+
+.healing_card {
+  padding: 20px;
+  height: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.497);
+  border-radius: 10px;
+  background-color: white;
+  p {
+    max-width: 380px;
+    font-weight: 700;
+    font-size: 25px;
+    color: #331b3b9f;
+  }
+}
+.healing_bottom {
+  gap: 10px;
+  margin-top: 560px;
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+
+.btn_gruop {
+  margin-top: 70px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.btn_info {
+  border-radius: 100px;
+  padding: 40px 50px;
+  background: linear-gradient(#fff, #d9d9d9, #002132bd);
+  box-shadow: 5px 5px 10px gray;
+  p {
+    text-align: center;
+    max-width: 352px;
+    font-weight: 700;
+    font-size: 30px;
+    span {
+      color: red;
+    }
+  }
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  a {
+    display: inline-block;
+    max-width: 254px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 30px;
+    padding: 10px 50px;
+    background-color: #331b3b;
+    text-transform: uppercase;
+    border-radius: 10px;
+    box-shadow: 5px 5px 10px gray;
+  }
+}

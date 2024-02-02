@@ -98,6 +98,10 @@
   @include media(1024px, 1200px){
     height: 400px;
   }
+  
+  @include media(0px, 600px){
+    height: 400px;
+  }
 
   @include tablet() {
     height: 360px;
