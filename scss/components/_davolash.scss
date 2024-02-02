@@ -19,6 +19,7 @@
       color: red;
     }
   }
+
   h2 {
     display: inline-block;
     position: relative;
@@ -61,6 +62,7 @@
     color: #331b3b9f;
   }
 }
+
 .healing_bottom {
   gap: 10px;
   margin-top: 560px;
@@ -107,5 +109,13 @@
     text-transform: uppercase;
     border-radius: 10px;
     box-shadow: 5px 5px 10px gray;
+    transform: scale(1);
+    transition: all 0.4s ease;
+    &:hover{
+      transform: scale(1.1);
+    }
+    &:active{
+      transform: scale(0.9);
+    }
   }
 }
