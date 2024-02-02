@@ -3,6 +3,9 @@
   background-image: url(../images/bg_composition.png);
   background-size: cover;
   padding-bottom: 1px;
+  @include mobile(){
+    display: none;
+  }
 }
 
 .composition_title {

@@ -1469,6 +1469,11 @@ body {
   background-size: cover;
   padding-bottom: 1px;
 }
+@media (max-width: 768px) {
+  .composition {
+    display: none;
+  }
+}
 
 .composition_title h3 {
   padding: 22px 50px;
