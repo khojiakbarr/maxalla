@@ -1872,4 +1872,100 @@ body {
 }
 .orderEndOf_tilte span {
   color: #ff0000;
+}
+
+.profi {
+  background: #002132;
+  padding: 60px 0 97px 0;
+  border-top-right-radius: 400px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profi {
+    background-color: #ecf7ff;
+    border-top-right-radius: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .profi {
+    background-color: #ecf7ff;
+    border-top-right-radius: 100px;
+  }
+}
+
+.profi_title {
+  position: relative;
+  display: inline-block;
+  font-weight: 700;
+  font-size: 48px;
+  color: black;
+}
+@media (max-width: 768px) {
+  .profi_title {
+    font-size: 30px;
+  }
+}
+.profi_title::after {
+  position: absolute;
+  content: "";
+  left: 159px;
+  bottom: -15px;
+  width: 159px;
+  height: 15px;
+  background-color: #fdc221;
+}
+@media (max-width: 768px) {
+  .profi_title::after {
+    left: 85px;
+    bottom: -10px;
+    width: 119px;
+    height: 9px;
+  }
+}
+
+.profi_items {
+  display: flex;
+  justify-content: space-between;
+  max-width: 797px;
+  margin: 0 auto;
+  margin-top: 45px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profi_items {
+    max-width: 734px;
+  }
+}
+@media (max-width: 768px) {
+  .profi_items {
+    align-items: center;
+    flex-direction: column;
+    gap: 30px;
+  }
+}
+
+.profi_card {
+  padding: 26px;
+  max-width: 319px;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.288);
+}
+.profi_card p {
+  color: #331b3b;
+  opacity: 0.6;
+}
+.profi_card p a {
+  color: #331b3b;
+  text-decoration: underline;
+  text-underline-position: auto;
+}
+
+.profi_name {
+  color: black;
+  font-weight: 700;
+  text-decoration: underline;
+  text-underline-position: auto;
 }/*# sourceMappingURL=main.css.map */
