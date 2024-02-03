@@ -75,10 +75,13 @@
 
 
 .card_wrapper{
-  margin: 55px 0;
+  margin: 55px 0 ;
   padding: 40px;
   border-radius: 50px;
   background-color: black;
+  @include media(0px , 1024px){
+    display: none;
+  }
   img{
     border-radius: 5px;
     width: 100%;

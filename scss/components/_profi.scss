@@ -2,6 +2,7 @@
   background: #002132;
   padding: 60px 0 97px 0;
   border-top-right-radius: 400px;
+  margin-top: 60px;
   @include tablet() {
     background-color: #ecf7ff;
     border-top-right-radius: 100px;
@@ -12,15 +13,30 @@
   }
 }
 
+.profi_main_title {
+  margin-top: 54px;
+  font-weight: 700;
+  font-size: 24px;
+  @include mobile(){
+    font-size: 18px;
+  }
+}
 .profi_title {
   position: relative;
   display: inline-block;
   font-weight: 700;
   font-size: 48px;
-  color: black;
+  color: white;
   @include mobile() {
     font-size: 30px;
+    color: black;
   }
+
+  @include tablet() {
+    font-size: 40px;
+    color: black;
+  }
+
   &::after {
     position: absolute;
     content: "";
@@ -29,8 +45,16 @@
     width: 159px;
     height: 15px;
     background-color: #fdc221;
+
     @include mobile() {
       left: 85px;
+      bottom: -10px;
+      width: 119px;
+      height: 9px;
+    }
+
+    @include tablet() {
+      left: 136px;
       bottom: -10px;
       width: 119px;
       height: 9px;
@@ -80,4 +104,37 @@
   font-weight: 700;
   text-decoration: underline;
   text-underline-position: auto;
+}
+//? profi text
+.profi_text {
+  margin: 100px auto 0;
+  max-width: 977px;
+  background: linear-gradient(#d9d9d9,  #002132c8);
+  padding: 16px 30px;
+  border-radius: 100px;
+  padding-bottom: 30px;
+  @include media(0px, 1024px) {
+    display: none;
+  }
+  p {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    line-height: 150%;
+  }
+}
+
+.profi_text_title {
+  display: flex;
+  justify-content: center;
+  h3 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+    max-width: 762px;
+    margin-bottom: 10px;
+    span {
+      color: #ff0000;
+    }
+  }
 }

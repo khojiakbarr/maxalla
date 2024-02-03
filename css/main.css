@@ -1780,6 +1780,11 @@ body {
   border-radius: 50px;
   background-color: black;
 }
+@media (min-width: 0px) and (max-width: 1024px) {
+  .card_wrapper {
+    display: none;
+  }
+}
 .card_wrapper img {
   border-radius: 5px;
   width: 100%;
@@ -1878,6 +1883,7 @@ body {
   background: #002132;
   padding: 60px 0 97px 0;
   border-top-right-radius: 400px;
+  margin-top: 60px;
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .profi {
@@ -1892,16 +1898,34 @@ body {
   }
 }
 
+.profi_main_title {
+  margin-top: 54px;
+  font-weight: 700;
+  font-size: 24px;
+}
+@media (max-width: 768px) {
+  .profi_main_title {
+    font-size: 18px;
+  }
+}
+
 .profi_title {
   position: relative;
   display: inline-block;
   font-weight: 700;
   font-size: 48px;
-  color: black;
+  color: white;
 }
 @media (max-width: 768px) {
   .profi_title {
     font-size: 30px;
+    color: black;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profi_title {
+    font-size: 40px;
+    color: black;
   }
 }
 .profi_title::after {
@@ -1916,6 +1940,14 @@ body {
 @media (max-width: 768px) {
   .profi_title::after {
     left: 85px;
+    bottom: -10px;
+    width: 119px;
+    height: 9px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profi_title::after {
+    left: 136px;
     bottom: -10px;
     width: 119px;
     height: 9px;
@@ -1968,4 +2000,39 @@ body {
   font-weight: 700;
   text-decoration: underline;
   text-underline-position: auto;
+}
+
+.profi_text {
+  margin: 100px auto 0;
+  max-width: 977px;
+  background: linear-gradient(#d9d9d9, rgba(0, 33, 50, 0.7843137255));
+  padding: 16px 30px;
+  border-radius: 100px;
+  padding-bottom: 30px;
+}
+@media (min-width: 0px) and (max-width: 1024px) {
+  .profi_text {
+    display: none;
+  }
+}
+.profi_text p {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  line-height: 150%;
+}
+
+.profi_text_title {
+  display: flex;
+  justify-content: center;
+}
+.profi_text_title h3 {
+  text-align: center;
+  font-weight: 600;
+  font-size: 25px;
+  max-width: 762px;
+  margin-bottom: 10px;
+}
+.profi_text_title h3 span {
+  color: #ff0000;
 }/*# sourceMappingURL=main.css.map */
