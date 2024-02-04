@@ -399,12 +399,57 @@ body {
   position: relative;
 }
 
+@keyframes animate {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-30px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  50% {
+    transform: rotate(40deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(0.9);
+  }
+  50% {
+    transform: scale(1.04);
+  }
+  100% {
+    transform: scale(0.9);
+  }
+}
+@keyframes rotatevector {
+  0% {
+    transform: rotate(0deg) translateY(0px);
+  }
+  50% {
+    transform: rotate(15deg) translateY(10px);
+  }
+  100% {
+    transform: rotate(0deg) translateY(0px);
+  }
+}
 .vektor_two {
   position: absolute;
   top: 90px;
   right: calc(50vw - 526px);
   left: 286px;
   transition: all 0.4s ease;
+  animation: animate 10s ease-in infinite;
 }
 
 .oval {
@@ -413,6 +458,7 @@ body {
   right: calc(50vw - 526px);
   left: 203px;
   transition: all 0.7s ease;
+  animation: rotate 5s ease infinite;
 }
 
 .vector_one {
@@ -421,6 +467,7 @@ body {
   right: calc(50vw - 526px);
   left: 299px;
   transition: all 0.5s ease;
+  animation: rotatevector 5s ease-in infinite;
 }
 
 .tabletka {
@@ -430,6 +477,7 @@ body {
   left: 214px;
   transition: all 0.4s ease;
   filter: drop-shadow(10px 8px 10px black);
+  animation: scale 5s ease infinite;
 }
 .tabletka:hover {
   transform: scale(1.1);
@@ -2226,4 +2274,96 @@ body {
   flex-direction: row-reverse;
   justify-content: center;
   gap: 25px;
+}
+
+@media (min-width: 0px) and (max-width: 1024px) {
+  .product {
+    display: none;
+  }
+}
+
+.product_wrapper {
+  background: rgb(0, 33, 50);
+  padding: 20px;
+}
+
+.product_title {
+  display: flex;
+  justify-content: flex-end;
+}
+.product_title h3 {
+  color: rgb(255, 255, 255);
+  font-size: 44px;
+  font-weight: 700;
+  text-align: left;
+}
+
+.product_items {
+  display: flex;
+  justify-content: space-between;
+}
+
+.product_image {
+  width: 400px;
+}
+.product_image img {
+  width: 500px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
+  transform: translateX(-100px);
+  height: 400px;
+}
+
+.product_info p {
+  margin-top: 50px;
+  max-width: 821px;
+  color: rgb(255, 255, 255);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 146.3%;
+  text-align: left;
+  text-transform: uppercase;
+}
+
+.working_title {
+  margin: 134px 0 158px;
+  color: rgb(255, 255, 255);
+  font-size: 35px;
+  font-weight: 700;
+  line-height: 106.3%;
+  text-align: center;
+  background: #000;
+  padding: 20px;
+  border-radius: 400px;
+}
+
+.working_items {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 235px;
+}
+
+.working_card {
+  padding: 30px 22px;
+  max-width: 319px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+  box-shadow: 10px 15px 9px 0px rgba(0, 0, 0, 0.5);
+  background: rgb(255, 255, 255);
+}
+.working_card img {
+  margin-bottom: 19px;
+}
+.working_card p {
+  color: rgb(51, 27, 59);
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 137.3%;
+  text-align: center;
+  text-transform: uppercase;
 }/*# sourceMappingURL=main.css.map */
