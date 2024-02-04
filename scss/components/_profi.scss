@@ -17,8 +17,12 @@
   margin-top: 54px;
   font-weight: 700;
   font-size: 24px;
+  display: none;
   @include mobile(){
+    display: block;
     font-size: 18px;
+  }@include tablet(){
+    display: block;
   }
 }
 .profi_title {

@@ -1902,10 +1902,17 @@ body {
   margin-top: 54px;
   font-weight: 700;
   font-size: 24px;
+  display: none;
 }
 @media (max-width: 768px) {
   .profi_main_title {
+    display: block;
     font-size: 18px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .profi_main_title {
+    display: block;
   }
 }
 
@@ -2035,4 +2042,188 @@ body {
 }
 .profi_text_title h3 span {
   color: #ff0000;
+}
+
+.otvis {
+  position: relative;
+  background-color: rgba(196, 1, 1, 0.5568627451);
+  border-top-left-radius: 400px;
+  margin: 100px 0 166px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .otvis {
+    background: transparent;
+  }
+}
+@media (max-width: 768px) {
+  .otvis {
+    background: transparent;
+  }
+}
+
+.otvis_title {
+  margin: 18px 0 59px;
+  display: flex;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .otvis_title {
+    margin-bottom: 40px;
+  }
+}
+.otvis_title h2 {
+  position: relative;
+  max-width: 459px;
+  color: rgb(51, 27, 59);
+  font-size: 48px;
+  font-weight: 300;
+  line-height: 110.8%;
+  text-align: center;
+}
+@media (max-width: 768px) {
+  .otvis_title h2 {
+    margin-top: 40px;
+    font-size: 42px;
+  }
+}
+.otvis_title h2::after {
+  position: absolute;
+  content: "";
+  left: 148px;
+  bottom: -15px;
+  width: 120px;
+  height: 11px;
+  background-color: rgb(253, 192, 33);
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .otvis_title h2::after {
+    left: 164px;
+    bottom: -15px;
+  }
+}
+@media (max-width: 768px) {
+  .otvis_title h2::after {
+    display: none;
+  }
+}
+.otvis_title h2 span {
+  font-weight: 700;
+}
+
+.otvis_card {
+  max-width: 448px;
+  background: white;
+  padding: 18px 32px 39px;
+  height: 363px;
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 0px) and (max-width: 1024px) {
+  .otvis_card {
+    box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.137);
+    border: 1px solid rgba(128, 128, 128, 0.201);
+    max-width: 500px;
+  }
+}
+@media (max-width: 768px) {
+  .otvis_card {
+    padding: 18px 20px 39px;
+    justify-content: center;
+  }
+}
+
+.otvis_icons {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.otvis_info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+}
+.otvis_info p {
+  margin-top: 13px;
+  color: rgb(51, 27, 59);
+  font-size: 16px;
+  font-weight: 400;
+  text-align: left;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .otvis_info p {
+    font-size: 15px;
+  }
+}
+@media (max-width: 768px) {
+  .otvis_info p {
+    font-size: 14px;
+  }
+}
+.otvis_info span {
+  margin-left: 19px;
+  position: relative;
+  color: rgb(0, 0, 0);
+  font-size: 16px;
+  font-weight: 600;
+  line-height: 159.3%;
+  text-align: left;
+}
+.otvis_info span p {
+  position: absolute;
+  width: 13px;
+  height: 3px;
+  background-color: rgb(253, 194, 33);
+  left: -18px;
+  top: -2px;
+}
+
+.wiper_otvis {
+  width: 65vw;
+  padding-bottom: 18px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .wiper_otvis {
+    position: absolute;
+    width: 98%;
+    right: 0;
+  }
+}
+@media (max-width: 768px) {
+  .wiper_otvis {
+    position: absolute;
+    width: 98%;
+    right: 0;
+  }
+}
+
+.swiper-button-disabled {
+  opacity: 0.3;
+}
+
+.swiper-next,
+.swiper-prev {
+  width: 57px;
+  height: 57px;
+  border: 1px solid black;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  .swiper-next,
+  .swiper-prev {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+.swiper__btns {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  gap: 25px;
 }/*# sourceMappingURL=main.css.map */

@@ -70,3 +70,32 @@ var swiper = new Swiper(".prostata_swiper", {
     },
   },
 });
+
+//? swiper otvis
+
+var swiper = new Swiper(".wiper_otvis", {
+  slidesPerView: 2,
+  spaceBetween: 30,
+  freeMode: true,
+  pagination: {
+    clickable: true,
+  },
+  navigation: {
+    nextEl: ".swiper-next",
+    prevEl: ".swiper-prev",
+  },
+  breakpoints: {
+    0: {
+      slidesPerView: 1,
+      spaceBetween: 20,
+    },
+    768: {
+      slidesPerView: 1.6,
+      spaceBetween: 40,
+    },
+    1024: {
+      slidesPerView: 2,
+      spaceBetween: 50,
+    },
+  },
+});
