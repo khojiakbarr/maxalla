@@ -9,6 +9,8 @@
   }
   @include mobile() {
     background-position: center;
+  padding-bottom: 110px;
+
   }
 }
 
@@ -118,6 +120,7 @@
     padding: 15px;
     padding-left: 15px;
     border-radius: 15px;
+    margin-bottom: 0;
   }
 
   p {

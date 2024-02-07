@@ -1711,6 +1711,7 @@ body {
 @media (max-width: 768px) {
   .composition {
     background-position: center;
+    padding-bottom: 110px;
   }
 }
 
@@ -1834,6 +1835,7 @@ body {
     padding: 15px;
     padding-left: 15px;
     border-radius: 15px;
+    margin-bottom: 0;
   }
 }
 .composition_info p {
@@ -1914,9 +1916,10 @@ body {
   padding-top: 200px;
   text-transform: uppercase;
 }
-@media (min-width: 0px) and (max-width: 1024px) {
+@media (max-width: 768px) {
   .power {
-    display: none;
+    margin-top: 0;
+    padding-top: 40px;
   }
 }
 
@@ -1930,9 +1933,16 @@ body {
   font-weight: 700;
   font-size: 40px;
 }
-@media (min-width: 0px) and (max-width: 1024px) {
+@media (min-width: 768px) and (max-width: 1024px) {
   .power_title {
-    display: none;
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .power_title {
+    font-size: 20px;
+    padding: 15px 15px;
+    margin: 20px 15px 20px 15px;
   }
 }
 .power_title span {
@@ -1946,6 +1956,17 @@ body {
   font-size: 45px;
   margin-bottom: 80px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .power_text {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .power_text {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
 .power_text span {
   color: #ff0000;
 }
@@ -1955,9 +1976,25 @@ body {
   background: linear-gradient(rgba(217, 217, 217, 0.8784313725), rgba(255, 0, 0, 0.4941176471));
   border-radius: 100px;
 }
+@media (max-width: 768px) {
+  .list_items {
+    padding: 20px;
+    border-radius: 15px;
+  }
+}
 .list_items h3 {
   font-size: 38px;
   font-weight: 700;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .list_items h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .list_items h3 {
+    font-size: 16px;
+  }
 }
 
 .list_info {
@@ -1965,6 +2002,11 @@ body {
   display: flex;
   flex-direction: column;
   gap: 40px;
+}
+@media (max-width: 768px) {
+  .list_info {
+    padding: 20px 0;
+  }
 }
 .list_info h3 {
   text-align: center;
@@ -2035,11 +2077,32 @@ body {
   flex-direction: column;
   gap: 40px;
 }
+@media (max-width: 768px) {
+  .list_info {
+    gap: 20px;
+    padding: 20px 0 40px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .list_info {
+    gap: 30px;
+  }
+}
 .list_info h3 {
   text-align: center;
   color: white;
   font-size: 38px;
   font-weight: 700;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .list_info h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .list_info h3 {
+    font-size: 16px;
+  }
 }
 
 .card_wrapper {
