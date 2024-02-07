@@ -18,10 +18,11 @@
   font-weight: 700;
   font-size: 24px;
   display: none;
-  @include mobile(){
+  @include mobile() {
     display: block;
     font-size: 18px;
-  }@include tablet(){
+  }
+  @include tablet() {
     display: block;
   }
 }
@@ -113,18 +114,26 @@
 .profi_text {
   margin: 100px auto 0;
   max-width: 977px;
-  background: linear-gradient(#d9d9d9,  #002132c8);
+  background: linear-gradient(#d9d9d9, #002132c8);
   padding: 16px 30px;
   border-radius: 100px;
   padding-bottom: 30px;
-  @include media(0px, 1024px) {
-    display: none;
+
+  @include mobile() {
+    padding: 20px;
+    border-radius: 15px;
   }
   p {
     text-align: center;
     font-weight: 600;
     font-size: 25px;
     line-height: 150%;
+    @include tablet() {
+      font-size: 20px;
+    }
+    @include mobile() {
+      font-size: 20px;
+    }
   }
 }
 
@@ -137,6 +146,13 @@
     font-size: 25px;
     max-width: 762px;
     margin-bottom: 10px;
+    
+    @include tablet() {
+      font-size: 25px;
+    }
+    @include mobile() {
+      font-size: 22px;
+    }
     span {
       color: #ff0000;
     }
