@@ -899,6 +899,11 @@ body {
   background-color: black;
   border-radius: 400px;
 }
+@media (max-width: 768px) {
+  .swp_title {
+    margin: 30px 15px;
+  }
+}
 
 .swp_title_info {
   color: #fff;
@@ -909,9 +914,11 @@ body {
 .swp_title_info span {
   color: red;
 }
-@media (min-width: 0px) and (max-width: 1024px) {
+@media (max-width: 768px) {
   .swp_title_info {
-    display: none;
+    font-weight: 600;
+    font-size: 20px;
+    padding: 16px;
   }
 }
 
@@ -1141,12 +1148,6 @@ body {
     padding: 12px 20px;
   }
 }
-.input_control::-moz-placeholder {
-  color: black;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Hind Vadodara", sans-serif;
-}
 .input_control::placeholder {
   color: black;
   font-size: 18px;
@@ -1163,12 +1164,6 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
-.input_email::-moz-placeholder {
-  color: black;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Hind Vadodara", sans-serif;
-}
 .input_email::placeholder {
   color: black;
   font-size: 18px;
@@ -1184,12 +1179,6 @@ body {
   color: black;
   font-size: 18px;
   font-weight: 400;
-}
-.ball::-moz-placeholder {
-  color: black;
-  font-size: 18px;
-  font-weight: 400;
-  font-family: "Hind Vadodara", sans-serif;
 }
 .ball::placeholder {
   color: black;
@@ -1322,12 +1311,6 @@ body {
   font-weight: 400;
 }
 
-@media (min-width: 0px) and (max-width: 1024px) {
-  .cure {
-    display: none;
-  }
-}
-
 .cure_head {
   margin: 60px 0;
   display: flex;
@@ -1335,6 +1318,17 @@ body {
   align-items: center;
   gap: 30px;
   margin-bottom: 120px;
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cure_head {
+    margin-bottom: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .cure_head {
+    margin-bottom: 20px;
+  }
 }
 .cure_head h2 {
   padding: 20px 40px;
@@ -1343,6 +1337,20 @@ body {
   border-radius: 400px;
   color: white;
   font-size: 40px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cure_head h2 {
+    font-size: 30px;
+    text-align: center;
+    padding: 15px 30px;
+  }
+}
+@media (max-width: 768px) {
+  .cure_head h2 {
+    font-size: 20px;
+    text-align: center;
+    padding: 15px 30px;
+  }
 }
 .cure_head h2 span {
   color: red;
@@ -1353,6 +1361,16 @@ body {
   font-size: 40px;
   display: inline-block;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cure_head h3 {
+    font-size: 30px;
+  }
+}
+@media (max-width: 768px) {
+  .cure_head h3 {
+    font-size: 20px;
+  }
+}
 .cure_head h3 span {
   color: red;
 }
@@ -1362,6 +1380,19 @@ body {
   flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 80px;
+  display: none;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .cure_items {
+    justify-content: center;
+    gap: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .cure_items {
+    justify-content: center;
+    row-gap: 40px;
+  }
 }
 
 .cure_card {
@@ -1392,9 +1423,19 @@ body {
   background-position: center top 270px;
   background-size: 51%;
 }
-@media (min-width: 0px) and (max-width: 1024px) {
+@media (min-width: 1024px) and (max-width: 1200px) {
   .healing {
-    display: none;
+    background-position: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .healing {
+    background-image: none;
+  }
+}
+@media (max-width: 768px) {
+  .healing {
+    background-image: none;
   }
 }
 
@@ -1405,6 +1446,16 @@ body {
   font-weight: 600;
   font-size: 30px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .healing_tile h3 {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .healing_tile h3 {
+    font-size: 20px;
+  }
+}
 .healing_tile h3 span {
   color: red;
 }
@@ -1413,6 +1464,18 @@ body {
   position: relative;
   font-weight: 400;
   font-size: 50px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .healing_tile h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .healing_tile h2 {
+    font-size: 40px;
+    margin-bottom: 20px;
+  }
 }
 .healing_tile h2::after {
   position: absolute;
@@ -1423,13 +1486,35 @@ body {
   height: 10px;
   background-color: #fdc221;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .healing_tile h2::after {
+    left: 60px;
+  }
+}
+@media (max-width: 768px) {
+  .healing_tile h2::after {
+    left: 58px;
+  }
+}
 
 .healing_top {
   margin-top: 120px;
   display: flex;
   justify-content: space-between;
   align-items: start;
-  gap: 10px;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .healing_top {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .healing_top {
+    margin-top: 20px;
+  }
 }
 
 .healing_card {
@@ -1443,19 +1528,74 @@ body {
   border-radius: 10px;
   background-color: white;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .healing_card {
+    padding: 7px 18px;
+    height: 136px;
+  }
+}
+@media (max-width: 768px) {
+  .healing_card {
+    padding: 7px 18px;
+    height: 136px;
+  }
+}
+.healing_card img {
+  width: 116px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .healing_card img {
+    width: 72px;
+  }
+}
+@media (max-width: 768px) {
+  .healing_card img {
+    width: 72px;
+  }
+}
 .healing_card p {
   max-width: 380px;
   font-weight: 700;
   font-size: 25px;
   color: rgba(51, 27, 59, 0.6235294118);
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .healing_card p {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 146.3%;
+    letter-spacing: 2%;
+    text-align: left;
+  }
+}
+@media (max-width: 768px) {
+  .healing_card p {
+    font-size: 19px;
+    font-weight: 700;
+    line-height: 146.3%;
+    letter-spacing: 2%;
+    text-align: left;
+  }
+}
 
 .healing_bottom {
-  gap: 10px;
+  gap: 20px;
   margin-top: 560px;
   display: flex;
   justify-content: space-between;
   align-items: start;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .healing_bottom {
+    margin-top: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .healing_bottom {
+    margin-top: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
 }
 
 .btn_gruop {
@@ -1463,6 +1603,14 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  gap: 20px;
+}
+@media (max-width: 768px) {
+  .btn_gruop {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
 }
 
 .btn_info {
@@ -1471,11 +1619,31 @@ body {
   background: linear-gradient(#fff, #d9d9d9, rgba(0, 33, 50, 0.7411764706));
   box-shadow: 5px 5px 10px gray;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn_info {
+    padding: 20px 35px;
+  }
+}
+@media (max-width: 768px) {
+  .btn_info {
+    padding: 20px 35px;
+  }
+}
 .btn_info p {
   text-align: center;
   max-width: 352px;
   font-weight: 700;
   font-size: 30px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn_info p {
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .btn_info p {
+    font-size: 20px;
+  }
 }
 .btn_info p span {
   color: red;
@@ -1500,11 +1668,33 @@ body {
   transform: scale(1);
   transition: all 0.4s ease;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn-primary a {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .btn-primary a {
+    text-align: center;
+    font-size: 20px;
+  }
+}
 .btn-primary a:hover {
   transform: scale(1.1);
 }
 .btn-primary a:active {
   transform: scale(0.9);
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .btn-primary img {
+    max-width: 70px;
+  }
+}
+@media (max-width: 768px) {
+  .btn-primary img {
+    max-width: 60px;
+  }
 }
 
 .composition {
@@ -1515,12 +1705,12 @@ body {
 }
 @media (min-width: 768px) and (max-width: 1024px) {
   .composition {
-    display: none;
+    background-position: center;
   }
 }
 @media (max-width: 768px) {
   .composition {
-    display: none;
+    background-position: center;
   }
 }
 
@@ -1534,6 +1724,18 @@ body {
   margin-top: 90px;
   border-radius: 100px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .composition_title h3 {
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .composition_title h3 {
+    font-size: 20px;
+    padding: 15px 15px;
+    margin-top: 150px;
+  }
+}
 .composition_title h3 span {
   color: red;
 }
@@ -1541,12 +1743,30 @@ body {
 .composition_image {
   transform: scale(1.4);
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .composition_image {
+    transform: scale(1);
+  }
+}
+@media (max-width: 768px) {
+  .composition_image {
+    transform: scale(1);
+    width: 100%;
+  }
+}
 
 .composition_items {
   margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+@media (max-width: 768px) {
+  .composition_items {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 .composition_card {
@@ -1560,6 +1780,22 @@ body {
   box-shadow: 5px 5px 10px black;
   padding: 20px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .composition_card {
+    max-width: 230px;
+  }
+  .composition_card img {
+    width: 200px;
+  }
+}
+@media (max-width: 768px) {
+  .composition_card {
+    max-width: 230px;
+  }
+  .composition_card img {
+    width: 200px;
+  }
+}
 .composition_card p {
   padding: 7px 20px;
   color: white;
@@ -1567,6 +1803,16 @@ body {
   font-weight: 700;
   background-color: #6c6c6c;
   border-radius: 100px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .composition_card p {
+    font-size: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .composition_card p {
+    font-size: 16px;
+  }
 }
 
 .composition_info {
@@ -1577,11 +1823,36 @@ body {
   box-shadow: 5px 5px 10px black;
   margin-bottom: 200px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .composition_info {
+    padding: 30px;
+    padding-left: 50px;
+  }
+}
+@media (max-width: 768px) {
+  .composition_info {
+    padding: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+  }
+}
 .composition_info p {
   margin-top: 100px;
   color: white;
   font-weight: 700;
   font-size: 20px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .composition_info p {
+    color: black;
+  }
+}
+@media (max-width: 768px) {
+  .composition_info p {
+    color: black;
+    margin-top: 20px;
+    font-size: 14px;
+  }
 }
 
 .item_title {
@@ -1590,14 +1861,49 @@ body {
   font-size: 35px;
   color: #ff0000;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .item_title {
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .item_title {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
+}
 
 .item_info {
   font-weight: 700;
   font-size: 35px;
 }
+@media (min-width: 768px) and (max-width: 1024px) {
+  .item_info {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+}
+@media (max-width: 768px) {
+  .item_info {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
+}
 
 .item_title:nth-child(n+2) {
   margin-top: 50px;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .item_title:nth-child(n+2) {
+    margin-top: 20px;
+    font-size: 35px;
+  }
+}
+@media (max-width: 768px) {
+  .item_title:nth-child(n+2) {
+    margin-top: 20px;
+    font-size: 20px;
+  }
 }
 
 .power {
@@ -2308,10 +2614,8 @@ body {
 }
 .product_image img {
   width: 500px;
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: center;
-     object-position: center;
+  object-fit: cover;
+  object-position: center;
   transform: translateX(-100px);
   height: 400px;
 }
@@ -2366,4 +2670,4 @@ body {
   line-height: 137.3%;
   text-align: center;
   text-transform: uppercase;
-}/*# sourceMappingURL=main.css.map */
+}
