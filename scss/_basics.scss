@@ -7,7 +7,7 @@
 }
 
 .container {
-  max-width: 1210px;
+  max-width: 1330px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -23,4 +23,9 @@ li {
 body {
   font-family: "Hind Vadodara", sans-serif;
   scroll-behavior: smooth;
+}
+input,
+input:focus{
+  border: none;
+  outline: none;
 }

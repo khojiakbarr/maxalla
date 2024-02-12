@@ -8,7 +8,7 @@
 }
 
 .container {
-  max-width: 1210px;
+  max-width: 1330px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -24,6 +24,12 @@ li {
 body {
   font-family: "Hind Vadodara", sans-serif;
   scroll-behavior: smooth;
+}
+
+input,
+input:focus {
+  border: none;
+  outline: none;
 }
 
 .header {
@@ -1148,6 +1154,12 @@ body {
     padding: 12px 20px;
   }
 }
+.input_control::-moz-placeholder {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Hind Vadodara", sans-serif;
+}
 .input_control::placeholder {
   color: black;
   font-size: 18px;
@@ -1164,6 +1176,12 @@ body {
   font-size: 18px;
   font-weight: 400;
 }
+.input_email::-moz-placeholder {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Hind Vadodara", sans-serif;
+}
 .input_email::placeholder {
   color: black;
   font-size: 18px;
@@ -1179,6 +1197,12 @@ body {
   color: black;
   font-size: 18px;
   font-weight: 400;
+}
+.ball::-moz-placeholder {
+  color: black;
+  font-size: 18px;
+  font-weight: 400;
+  font-family: "Hind Vadodara", sans-serif;
 }
 .ball::placeholder {
   color: black;
@@ -2875,8 +2899,10 @@ body {
 }
 .product_image img {
   width: 500px;
-  object-fit: cover;
-  object-position: center;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center;
+     object-position: center;
   transform: translateX(-100px);
   height: 400px;
 }
@@ -2965,4 +2991,119 @@ body {
   line-height: 137.3%;
   text-align: center;
   text-transform: uppercase;
+}
+
+.footer {
+  border-radius: 0 180px 0 0;
+  background: #002132;
+}
+.footer .wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+}
+.footer .wrapper .left {
+  margin: 30px 0 81px 0;
+}
+.footer .wrapper .left .title {
+  letter-spacing: 1%;
+  font-size: 36px;
+  color: white;
+}
+.footer .wrapper .left .day {
+  text-align: center;
+  background: #FF0000;
+  color: white;
+  font-family: Hind Vadodara;
+  font-size: 20px;
+  font-weight: 700;
+  letter-spacing: 5.5%;
+}
+.footer .wrapper .left .box {
+  background: #fff;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.footer .wrapper .left .box .title {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Hind Vadodara;
+  color: #000;
+}
+.footer .wrapper .left .box .narx {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Hind Vadodara;
+  color: #fff;
+  padding: 0 25px;
+  background: #6C6C6C;
+  border-radius: 50px;
+}
+.footer .wrapper .left .box .dic {
+  font-size: 30px;
+  font-weight: 700;
+  font-family: Hind Vadodara;
+  color: #fff;
+  padding: 0 20px;
+  background: #57C401;
+  border-radius: 50px;
+}
+.footer .wrapper .left .box span {
+  font-size: 20px;
+  font-weight: 700;
+  font-family: Hind Vadodara;
+  color: #FF0000;
+}
+.footer .wrapper .right .title {
+  margin-top: 50px;
+  font-size: 40px;
+  font-weight: 800;
+  color: #fff;
+}
+.footer .wrapper .right .form {
+  margin: 48px 0 148px;
+}
+.footer .wrapper .right .form .inp {
+  margin-right: 35px;
+  padding: 15px 80px 15px 23px;
+}
+.footer .wrapper .right .form .input {
+  padding: 15px 80px 15px 23px;
+}
+.footer .wrapper .right .form .btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  max-width: 254px;
+  color: #fff;
+  font-weight: 700;
+  font-size: 30px;
+  padding: 10px 50px;
+  background-color: #331b3b;
+  text-transform: uppercase;
+  border-radius: 10px;
+  box-shadow: 5px 5px 10px #000;
+  transform: scale(1);
+  transition: all 0.4s ease;
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .footer .wrapper .right .form .btn {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+@media (max-width: 768px) {
+  .footer .wrapper .right .form .btn {
+    text-align: center;
+    font-size: 20px;
+  }
+}
+.footer .wrapper .right .form .btn:hover {
+  transform: scale(1.1);
+}
+.footer .wrapper .right .form .btn:active {
+  transform: scale(0.9);
 }/*# sourceMappingURL=main.css.map */

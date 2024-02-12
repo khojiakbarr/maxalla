@@ -112,3 +112,23 @@ var swiper = new Swiper(".wiper_otvis", {
     },
   },
 });
+// TELEGRAM BOT
+const user = document.getElementById('name')
+const number = document.getElementById('input')
+CHAT_ID = '-1002104534949'
+TOKEN = '6779609754:AAGGILcPKAb2oqP3X6ijwabMR5j4Ig1_xDo'
+URL_API = `https://api.telegram.org/bot${TOKEN}/sendMessage`
+document.getElementById('form').addEventListener("submit", function (e) {
+  e.preventDefault()
+
+  let message = `<b>urion zakaz</b>\n`;
+  message += `<b>ism:</b>${user.value}\n`
+  message += `<b>nomer:</b>${number.value}`
+
+  axios.post(URL_API, {
+    chat_id: CHAT_ID,
+    parse_mode: 'html',
+    text: message,
+  })
+  console.log("hello");
+})

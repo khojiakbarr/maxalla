@@ -1015,23 +1015,37 @@
         </div>
       </section>
       <footer class="footer" id="footer">
-        <div class="left">
-          <h3 class="title">URION ! SIZGA FOYDALI</h3>
-          <div class="box"></div>
-        </div>
-        <div class="right">
-          <h3 class="title">BUYURTMA QILAMIZMI ?</h3>
-          <form class="form">
-            <input type="text" class="inp" placeholder="Ваше имя" autocomplete="none">
-            <input type="text" class="inp" value="+998" placeholder="Ваш телефон" autocomplete="none">
-            <button class="btn">buyurtma <br> qoldiring </button>
-          </form>
-        </div>
+        <div class="container">
+          <div class="wrapper">
+            <div class="left">
+              <h3 class="title">URION ! SIZGA FOYDALI</h3>
+              <p class="day">faqat 1 kun</p>
+              <div class="box">
+                  <img src="images/footer/urion.png" alt="foto of antabiotic" class="img">
+                  <h4 class="title">eski narxi</h4>
+                  <p class="narx">499.500 UZS</p>
+                  <h4 class="title">yangi narx</h4>
+                  <p class="dic">50 % chegirmada</p>
+                  <span>harid qiling</span>
+                </div>
+              </div>
+              <div class="right">
+                <h3 class="title">BUYURTMA QILAMIZMI ?</h3>
+                <form class="form" id="form">
+                  <input type="text" class="inp" id="name" placeholder="Ваше имя" autocomplete="none" required>
+                  <input type="tel" class="input" id="input" value="+998" placeholder="Ваш телефон" autocomplete="none" required>
+                  <br>
+                  <button class="btn">buyurtma qoldiring </button>
+                </form>
+              </div>
+            </div>
+          </div>
       </footer>
     </main>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-
+    <!-- axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
     <script src="./js/main.js"></script>
   </body>
 </html>
