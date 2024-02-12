@@ -103,7 +103,7 @@
       justify-content: center;
       height: 450px;
 
-      @include mobile(){
+      @include mobile() {
         height: 350px;
       }
       .title-right {
@@ -123,8 +123,8 @@
 
       .form {
         margin: 48px 0 0px;
-        @include mobile(){
-            margin-top: 20px;
+        @include mobile() {
+          margin-top: 20px;
         }
         .inp {
           margin-right: 35px;
@@ -197,7 +197,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  @include mobile(){
+  @include mobile() {
     margin-top: 10px;
   }
 
@@ -207,5 +207,24 @@
 
   img {
     width: 80px;
+    transition: all 0.3s ease;
   }
+}
+
+.succes {
+  transition: all 0.3s ease;
+  animation: succes 1s ;
+}
+
+@keyframes succes {
+  0% {
+    transform: translateY(0px)
+  }
+  50%{
+    transform: translateY(-40px)
+  }
+  100% {
+    transform: translateY(0px)
+  }
+
 }

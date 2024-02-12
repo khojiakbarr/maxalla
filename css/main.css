@@ -3186,4 +3186,22 @@ input:focus {
 }
 .btn-gruop-right img {
   width: 80px;
+  transition: all 0.3s ease;
+}
+
+.succes {
+  transition: all 0.3s ease;
+  animation: succes 1s;
+}
+
+@keyframes succes {
+  0% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-40px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
 }
