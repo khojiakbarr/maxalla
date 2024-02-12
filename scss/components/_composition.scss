@@ -3,11 +3,14 @@
   background-image: url(../images/bg_composition.png);
   background-size: cover;
   padding-bottom: 131px;
+
   @include tablet() {
-    display: none;
+    background-position: center;
   }
   @include mobile() {
-    display: none;
+    background-position: center;
+  padding-bottom: 110px;
+
   }
 }
 
@@ -21,6 +24,14 @@
     font-size: 45px;
     margin-top: 90px;
     border-radius: 100px;
+    @include tablet() {
+      font-size: 35px;
+    }
+    @include mobile() {
+      font-size: 20px;
+      padding: 15px 15px;
+      margin-top: 150px;
+    }
 
     span {
       color: red;
@@ -30,6 +41,14 @@
 
 .composition_image {
   transform: scale(1.4);
+
+  @include tablet() {
+    transform: scale(1);
+  }
+  @include mobile() {
+    transform: scale(1);
+    width: 100%;
+  }
 }
 
 .composition_items {
@@ -37,6 +56,11 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
+  @include mobile() {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+  }
 }
 
 .composition_card {
@@ -49,6 +73,21 @@
   gap: 30px;
   box-shadow: 5px 5px 10px black;
   padding: 20px;
+
+  @include tablet() {
+    max-width: 230px;
+
+    img {
+      width: 200px;
+    }
+  }
+  @include mobile() {
+    max-width: 230px;
+
+    img {
+      width: 200px;
+    }
+  }
   p {
     padding: 7px 20px;
     color: white;
@@ -56,6 +95,12 @@
     font-weight: 700;
     background-color: #6c6c6c;
     border-radius: 100px;
+    @include tablet() {
+      font-size: 16px;
+    }
+    @include mobile() {
+      font-size: 16px;
+    }
   }
 }
 
@@ -67,11 +112,32 @@
   box-shadow: 5px 5px 10px black;
   margin-bottom: 200px;
 
+  @include tablet() {
+    padding: 30px;
+    padding-left: 50px;
+  }
+  @include mobile() {
+    padding: 15px;
+    padding-left: 15px;
+    border-radius: 15px;
+    margin-bottom: 0;
+  }
+
   p {
     margin-top: 100px;
     color: white;
     font-weight: 700;
     font-size: 20px;
+
+    @include tablet() {
+      color: black;
+    }
+
+    @include mobile() {
+      color: black;
+      margin-top: 20px;
+      font-size: 14px;
+    }
   }
 }
 
@@ -80,13 +146,39 @@
   font-weight: 700;
   font-size: 35px;
   color: #ff0000;
+
+  @include tablet() {
+    margin-bottom: 10px;
+  }
+  @include mobile() {
+    margin-bottom: 10px;
+    font-size: 20px;
+  }
 }
 
 .item_info {
   font-weight: 700;
   font-size: 35px;
+
+  @include tablet() {
+    font-size: 30px;
+    margin-bottom: 10px;
+  }
+  @include mobile() {
+    font-size: 17px;
+    margin-bottom: 10px;
+  }
 }
 
 .item_title:nth-child(n + 2) {
   margin-top: 50px;
+
+  @include tablet() {
+    margin-top: 20px;
+    font-size: 35px;
+  }
+  @include mobile() {
+    margin-top: 20px;
+    font-size: 20px;
+  }
 }

@@ -21,6 +21,11 @@ tabletka.addEventListener("mouseout", (e) => {
 var swiper = new Swiper(".mySwip__swiper", {
   slidesPerView: 1,
   spaceBetween: 40,
+  loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   navigation: {
     nextEl: ".swip-next",
     prevEl: ".swip-prev",
@@ -43,6 +48,10 @@ var swiper = new Swiper(".prostata_swiper", {
   slidesPerView: 3,
   spaceBetween: 30,
   loop: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     el: ".swiper-pagination",
     clickable: true,
@@ -77,6 +86,10 @@ var swiper = new Swiper(".wiper_otvis", {
   slidesPerView: 2,
   spaceBetween: 30,
   freeMode: true,
+  autoplay: {
+    delay: 2500,
+    disableOnInteraction: false,
+  },
   pagination: {
     clickable: true,
   },

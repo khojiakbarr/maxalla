@@ -6,8 +6,9 @@
   padding-top: 200px;
   text-transform: uppercase;
 
-  @include media(0px, 1024px) {
-    display: none;
+  @include mobile() {
+    margin-top: 0;
+    padding-top: 40px;
   }
 }
 
@@ -20,8 +21,14 @@
   border-radius: 100px;
   font-weight: 700;
   font-size: 40px;
-  @include media(0px, 1024px) {
-    display: none;
+
+  @include tablet() {
+    font-size: 35px;
+  }
+  @include mobile() {
+    font-size: 20px;
+    padding: 15px 15px;
+    margin: 20px 15px 20px 15px;
   }
   span {
     color: #ff0000;
@@ -34,6 +41,14 @@
   font-weight: 700;
   font-size: 45px;
   margin-bottom: 80px;
+
+  @include tablet() {
+    font-size: 30px;
+  }
+  @include mobile() {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
   span {
     color: #ff0000;
   }
@@ -44,9 +59,21 @@
   background: linear-gradient(#d9d9d9e0, #ff00007e);
   border-radius: 100px;
 
+  @include mobile() {
+    padding: 20px;
+    border-radius: 15px;
+  }
+
   h3 {
     font-size: 38px;
     font-weight: 700;
+
+    @include tablet() {
+      font-size: 30px;
+    }
+    @include mobile() {
+      font-size: 16px;
+    }
   }
 }
 
@@ -55,6 +82,11 @@
   display: flex;
   flex-direction: column;
   gap: 40px;
+
+  @include mobile(){
+    padding: 20px 0;
+  }
+
   h3 {
     text-align: center;
     color: white;

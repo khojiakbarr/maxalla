@@ -3,6 +3,10 @@
   margin: 50px 15px;
   background-color: black;
   border-radius: 400px;
+
+  @include mobile(){
+    margin: 30px 15px;
+  }
 }
 .swp_title_info {
   color: #fff;
@@ -12,9 +16,15 @@
   span {
     color: red;
   }
-  @include media(0px, 1024px) {
-    display: none;
+
+  @include mobile() {
+    font-weight: 600;
+    font-size: 20px;
+    padding: 16px;
   }
+  // @include media(0px, 1024px) {
+  //   display: none;
+  // }
 }
 
 .swip__right-wrapper {
@@ -94,12 +104,12 @@
   background: rgba(255, 255, 255, 1);
   box-shadow: 0px 0px 9px 2px rgba(0, 0, 0, 0.05);
   border-radius: 10px;
-  
-  @include media(1024px, 1200px){
+
+  @include media(1024px, 1200px) {
     height: 400px;
   }
-  
-  @include media(0px, 600px){
+
+  @include media(0px, 600px) {
     height: 400px;
   }
 
