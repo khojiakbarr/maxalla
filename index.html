@@ -1033,7 +1033,9 @@
                 <h3 class="title">BUYURTMA QILAMIZMI ?</h3>
                 <form class="form" id="form">
                   <input type="text" class="inp" id="name" placeholder="Ваше имя" autocomplete="none" required>
-                  <input type="tel" class="input" id="input" value="+998" placeholder="Ваш телефон" autocomplete="none" required>
+                  <input type="tel"   pattern="^[0-9-+\s()]*$"
+                  maxLength="11"
+                  minLength="11" class="input" id="input" value="+998" placeholder="Ваш телефон" autocomplete="none" required>
                   <br>
                   <button class="btn">buyurtma qoldiring </button>
                 </form>
